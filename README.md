@@ -10,5 +10,6 @@ At first we use LSTM model as our baseline for our centralized training and afte
 ## Compare results
 By comparing results we understand most methods gets better results in IID distribution except Liadmm which trained in fewer steps than other algorithm and FedAVG and FedProx and FedAdmm results are close even fedprox in some loss parts are not as good as those other two. and finally centralize gives best loss curve and we know that centralize is suitable way but if we can't have that other decompositon methods have approprate results.
 
+![all_acc_IID](https://user-images.githubusercontent.com/58938036/220176655-35bd89d3-1aae-43fb-a86c-3ebd91605a24.png)
 ![all_loss_with_centralize_IID](https://user-images.githubusercontent.com/58938036/220176229-19fc6153-0cdf-40a0-b4f8-2f1d373bfe87.png)
 ![all_loss_with_centralized_non-iid](https://user-images.githubusercontent.com/58938036/220176567-58835162-8fd3-4360-b57e-c4899ce56d66.png)
