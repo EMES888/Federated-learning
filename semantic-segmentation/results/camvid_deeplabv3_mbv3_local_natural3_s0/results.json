@@ -1,0 +1,239 @@
+{
+  "name": "camvid_deeplabv3_mbv3_local_natural3_s0",
+  "config": {
+    "name": "camvid_deeplabv3_mbv3_local_natural3_s0",
+    "out_dir": "/content/drive/MyDrive/fedseg_runs",
+    "seed": 0,
+    "device": "auto",
+    "amp": true,
+    "dataset": "camvid",
+    "data_root": "/content/data",
+    "download": true,
+    "img_size": [
+      240,
+      320
+    ],
+    "augment": true,
+    "num_workers": 2,
+    "max_train_samples": 0,
+    "max_eval_samples": 0,
+    "num_clients": 3,
+    "partition": "natural",
+    "dirichlet_alpha": 0.5,
+    "clients_per_round": 0,
+    "rounds": 20,
+    "local_epochs": 2,
+    "hetero_epochs": false,
+    "max_local_steps": 0,
+    "algorithm": "local",
+    "bn_mode": "avg",
+    "mu": 0.01,
+    "rho": 0.01,
+    "alpha": 0.01,
+    "server_opt": "sgd",
+    "server_lr": 1.0,
+    "server_momentum": 0.9,
+    "weighted_agg": true,
+    "model": "deeplabv3_mbv3",
+    "pretrained": true,
+    "norm": "bn",
+    "unet_base": 32,
+    "batch_size": 8,
+    "optimizer": "sgd",
+    "lr": 0.01,
+    "momentum": 0.9,
+    "weight_decay": 0.0005,
+    "lr_schedule": "cosine",
+    "class_weights": "inv_sqrt",
+    "label_smoothing": 0.0,
+    "eval_every": 1,
+    "eval_personalized": true,
+    "save_checkpoints": true,
+    "resume": true,
+    "num_vis": 6,
+    "verbose": true
+  },
+  "best_round": 15,
+  "best_val_mIoU": 0.4431308732307952,
+  "test": {
+    "mIoU": 0.3664594995152452,
+    "pixel_acc": 0.7345735747076496,
+    "mean_acc": 0.5186129021068324,
+    "mDice": 0.47317193213312914,
+    "fwIoU": 0.6109093788910909,
+    "loss": 0.9945282163538134,
+    "per_class_iou": {
+      "Sky": 0.7077567537991948,
+      "Building": 0.554695205193867,
+      "Pole": 0.04076283061163362,
+      "Road": 0.7788526154556306,
+      "Sidewalk": 0.4424620210718433,
+      "Tree": 0.5483777084552143,
+      "SignSymbol": 0.10893923271571375,
+      "Fence": 0.12014297262510128,
+      "Car": 0.5737433590733884,
+      "Pedestrian": 0.09361393555562227,
+      "Bicyclist": 0.06170786011048812
+    },
+    "per_client_mIoU": [
+      0.3540272693374668,
+      0.3204617890552051,
+      0.4248894401530636
+    ],
+    "clients": [
+      {
+        "mIoU": 0.3540272693374668,
+        "pixel_acc": 0.7211934655561971,
+        "mean_acc": 0.5202311605044103,
+        "mDice": 0.46119465555667744,
+        "fwIoU": 0.5952881029022457,
+        "per_class_iou": {
+          "Sky": 0.5978071319936076,
+          "Building": 0.5622121317320511,
+          "Pole": 0.023770036533181046,
+          "Road": 0.7703282821123268,
+          "Sidewalk": 0.5014483963867151,
+          "Tree": 0.5491560062428933,
+          "SignSymbol": 0.10184472015623845,
+          "Fence": 0.0252118370054529,
+          "Car": 0.569917243708833,
+          "Pedestrian": 0.0968829558737079,
+          "Bicyclist": 0.0957212209671278
+        },
+        "loss": 1.0041196868143367
+      },
+      {
+        "mIoU": 0.3204617890552051,
+        "pixel_acc": 0.6948748914605272,
+        "mean_acc": 0.4413808917645014,
+        "mDice": 0.41927822781407753,
+        "fwIoU": 0.5565591019880629,
+        "per_class_iou": {
+          "Sky": 0.7328486192314619,
+          "Building": 0.4695272597834767,
+          "Pole": 0.023247285916347983,
+          "Road": 0.7327336845452603,
+          "Sidewalk": 0.24123994196245638,
+          "Tree": 0.5182871602124517,
+          "SignSymbol": 0.02803452441257842,
+          "Fence": 0.17218197381881956,
+          "Car": 0.5512790030762813,
+          "Pedestrian": 0.05570022664812219,
+          "Bicyclist": 0.0
+        },
+        "loss": 1.1952969091644614
+      },
+      {
+        "mIoU": 0.4248894401530636,
+        "pixel_acc": 0.7876523671062248,
+        "mean_acc": 0.5942266540515855,
+        "mDice": 0.5390429130286326,
+        "fwIoU": 0.6808809317829639,
+        "per_class_iou": {
+          "Sky": 0.7926145101725146,
+          "Building": 0.6323462240660732,
+          "Pole": 0.07527116938537183,
+          "Road": 0.8334958797093047,
+          "Sidewalk": 0.5846977248663585,
+          "Tree": 0.5776899589102976,
+          "SignSymbol": 0.19693845357832435,
+          "Fence": 0.1630351070510314,
+          "Car": 0.6000338304350509,
+          "Pedestrian": 0.12825862414503672,
+          "Bicyclist": 0.08940235936433655
+        },
+        "loss": 0.7841680530826421
+      }
+    ]
+  },
+  "test_personalized": {
+    "mIoU": 0.3664594995152452,
+    "pixel_acc": 0.7345735747076496,
+    "mean_acc": 0.5186129021068324,
+    "mDice": 0.47317193213312914,
+    "fwIoU": 0.6109093788910909,
+    "loss": 0.9945282163538134,
+    "per_class_iou": {
+      "Sky": 0.7077567537991948,
+      "Building": 0.554695205193867,
+      "Pole": 0.04076283061163362,
+      "Road": 0.7788526154556306,
+      "Sidewalk": 0.4424620210718433,
+      "Tree": 0.5483777084552143,
+      "SignSymbol": 0.10893923271571375,
+      "Fence": 0.12014297262510128,
+      "Car": 0.5737433590733884,
+      "Pedestrian": 0.09361393555562227,
+      "Bicyclist": 0.06170786011048812
+    },
+    "per_client_mIoU": [
+      0.3540272693374668,
+      0.3204617890552051,
+      0.4248894401530636
+    ]
+  },
+  "partition": {
+    "client_sizes": [
+      62,
+      101,
+      204
+    ],
+    "client_groups": [
+      {
+        "0001TP": 62
+      },
+      {
+        "0006R0": 101
+      },
+      {
+        "0016E5": 204
+      }
+    ],
+    "client_class_dist": [
+      [
+        0.201,
+        0.3021,
+        0.0097,
+        0.1991,
+        0.0469,
+        0.1182,
+        0.0122,
+        0.0045,
+        0.0936,
+        0.0071,
+        0.0056
+      ],
+      [
+        0.2099,
+        0.1115,
+        0.011,
+        0.3687,
+        0.0244,
+        0.1826,
+        0.0175,
+        0.0079,
+        0.0624,
+        0.0034,
+        0.0007
+      ],
+      [
+        0.1508,
+        0.2894,
+        0.0099,
+        0.3486,
+        0.0577,
+        0.0559,
+        0.0096,
+        0.0158,
+        0.0508,
+        0.0081,
+        0.0034
+      ]
+    ],
+    "mean_js": 0.0199955303581466,
+    "mean_tv": 0.12795400369865503
+  },
+  "comm_MB": 0.0,
+  "params_M": 11.022907,
+  "train_time_min": 6.470586538314819
+}

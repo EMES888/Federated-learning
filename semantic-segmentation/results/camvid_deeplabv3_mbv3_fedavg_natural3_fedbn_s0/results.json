@@ -1,0 +1,169 @@
+{
+  "name": "camvid_deeplabv3_mbv3_fedavg_natural3_fedbn_s0",
+  "config": {
+    "name": "camvid_deeplabv3_mbv3_fedavg_natural3_fedbn_s0",
+    "out_dir": "/content/drive/MyDrive/fedseg_runs",
+    "seed": 0,
+    "device": "auto",
+    "amp": true,
+    "dataset": "camvid",
+    "data_root": "/content/data",
+    "download": true,
+    "img_size": [
+      240,
+      320
+    ],
+    "augment": true,
+    "num_workers": 2,
+    "max_train_samples": 0,
+    "max_eval_samples": 0,
+    "num_clients": 3,
+    "partition": "natural",
+    "dirichlet_alpha": 0.5,
+    "clients_per_round": 0,
+    "rounds": 20,
+    "local_epochs": 2,
+    "hetero_epochs": false,
+    "max_local_steps": 0,
+    "algorithm": "fedavg",
+    "bn_mode": "fedbn",
+    "mu": 0.01,
+    "rho": 0.01,
+    "alpha": 0.01,
+    "server_opt": "sgd",
+    "server_lr": 1.0,
+    "server_momentum": 0.9,
+    "weighted_agg": true,
+    "model": "deeplabv3_mbv3",
+    "pretrained": true,
+    "norm": "bn",
+    "unet_base": 32,
+    "batch_size": 8,
+    "optimizer": "sgd",
+    "lr": 0.01,
+    "momentum": 0.9,
+    "weight_decay": 0.0005,
+    "lr_schedule": "cosine",
+    "class_weights": "inv_sqrt",
+    "label_smoothing": 0.0,
+    "eval_every": 1,
+    "eval_personalized": true,
+    "save_checkpoints": true,
+    "resume": true,
+    "num_vis": 6,
+    "verbose": true
+  },
+  "best_round": 10,
+  "best_val_mIoU": 0.5291685115223935,
+  "test": {
+    "mIoU": 0.40583787950588435,
+    "pixel_acc": 0.7755477208468482,
+    "mean_acc": 0.5591179809906145,
+    "mDice": 0.5147096358122044,
+    "fwIoU": 0.6671310689251797,
+    "per_class_iou": {
+      "Sky": 0.7794466938197719,
+      "Building": 0.6163641009614151,
+      "Pole": 0.0700052524949351,
+      "Road": 0.8286571510338561,
+      "Sidewalk": 0.5760937742640431,
+      "Tree": 0.5424795736755946,
+      "SignSymbol": 0.15113059120102354,
+      "Fence": 0.13324732258829314,
+      "Car": 0.5988484824288907,
+      "Pedestrian": 0.12458342001027387,
+      "Bicyclist": 0.043360312086630944
+    },
+    "loss": 0.8087179011029747
+  },
+  "test_personalized": {
+    "mIoU": 0.3814473212305902,
+    "pixel_acc": 0.7510461424157587,
+    "mean_acc": 0.5223487159733368,
+    "mDice": 0.4927626774362844,
+    "fwIoU": 0.6295134219072099,
+    "loss": 0.947644167618349,
+    "per_class_iou": {
+      "Sky": 0.7482397141377687,
+      "Building": 0.5709365675872681,
+      "Pole": 0.05380562094624952,
+      "Road": 0.8146156558211767,
+      "Sidewalk": 0.5234052254885542,
+      "Tree": 0.4575138931869553,
+      "SignSymbol": 0.1382173639137169,
+      "Fence": 0.14330119784959358,
+      "Car": 0.563437682806253,
+      "Pedestrian": 0.11902883597009506,
+      "Bicyclist": 0.0634187758288615
+    },
+    "per_client_mIoU": [
+      0.3907404866828719,
+      0.3587226909675902,
+      0.39487878604130855
+    ]
+  },
+  "partition": {
+    "client_sizes": [
+      62,
+      101,
+      204
+    ],
+    "client_groups": [
+      {
+        "0001TP": 62
+      },
+      {
+        "0006R0": 101
+      },
+      {
+        "0016E5": 204
+      }
+    ],
+    "client_class_dist": [
+      [
+        0.201,
+        0.3021,
+        0.0097,
+        0.1991,
+        0.0469,
+        0.1182,
+        0.0122,
+        0.0045,
+        0.0936,
+        0.0071,
+        0.0056
+      ],
+      [
+        0.2099,
+        0.1115,
+        0.011,
+        0.3687,
+        0.0244,
+        0.1826,
+        0.0175,
+        0.0079,
+        0.0624,
+        0.0034,
+        0.0007
+      ],
+      [
+        0.1508,
+        0.2894,
+        0.0099,
+        0.3486,
+        0.0577,
+        0.0559,
+        0.0096,
+        0.0158,
+        0.0508,
+        0.0081,
+        0.0034
+      ]
+    ],
+    "mean_js": 0.0199955303581466,
+    "mean_tv": 0.12795400369865503
+  },
+  "comm_MB": 5033.076324462891,
+  "params_M": 11.022907,
+  "train_time_min": 6.866572018464407
+}

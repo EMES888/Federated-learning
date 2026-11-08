@@ -1,0 +1,38 @@
+[data] pets: train=3311 val=369 test=3669 size=(224, 224) classes=3
+[data] natural partition over 6 clients: sizes=[530, 539, 540, 536, 626, 540] JS=0.097
+        client 0: {'Abyssinian': 90, 'Bengal': 90, 'Birman': 90, 'Bombay': 86, 'British_Shorthair': 90, 'Egyptian_Mau': 84}
+        client 1: {'Maine_Coon': 90, 'Persian': 90, 'Ragdoll': 90, 'Russian_Blue': 90, 'Siamese': 89, 'Sphynx': 90}
+        client 2: {'american_bulldog': 90, 'american_pit_bull_terrier': 90, 'basset_hound': 90, 'beagle': 90, 'boxer': 90, 'chihuahua': 90}
+        client 3: {'english_cocker_spaniel': 86, 'english_setter': 90, 'german_shorthaired': 90, 'great_pyrenees': 90, 'havanese': 90, 'japanese_chin': 90}
+        client 4: {'keeshond': 90, 'leonberger': 90, 'miniature_pinscher': 90, 'newfoundland': 86, 'pomeranian': 90, 'pug': 90, 'saint_bernard': 90}
+        client 5: {'samoyed': 90, 'scottish_terrier': 90, 'shiba_inu': 90, 'staffordshire_bull_terrier': 90, 'wheaten_terrier': 90, 'yorkshire_terrier': 90}
+[model] deeplabv3_mbv3: 11.02M params, 42.1 MB shared per upload, local keys=0
+[resume] no checkpoint found, starting from scratch
+[pets_deeplabv3_mbv3_fedadmm_natural6_s0] round   1/20 lr=0.0100 train_loss=0.3483 | val loss=1.1733 mIoU=0.4624 acc=0.8006 (18.7s)
+[pets_deeplabv3_mbv3_fedadmm_natural6_s0] round   2/20 lr=0.0099 train_loss=0.2754 | val loss=4.6206 mIoU=0.3898 acc=0.7096 (20.7s)
+[pets_deeplabv3_mbv3_fedadmm_natural6_s0] round   3/20 lr=0.0098 train_loss=0.4968 | val loss=5.5055 mIoU=0.4564 acc=0.7913 (23.2s)
+[pets_deeplabv3_mbv3_fedadmm_natural6_s0] round   4/20 lr=0.0095 train_loss=0.1408 | val loss=4.8610 mIoU=0.4935 acc=0.8325 (33.4s)
+[pets_deeplabv3_mbv3_fedadmm_natural6_s0] round   5/20 lr=0.0091 train_loss=1.7077 | val loss=1.1371 mIoU=0.3236 acc=0.6201 (23.6s)
+[pets_deeplabv3_mbv3_fedadmm_natural6_s0] round   6/20 lr=0.0086 train_loss=0.5206 | val loss=0.9525 mIoU=0.4110 acc=0.7466 (25.3s)
+[pets_deeplabv3_mbv3_fedadmm_natural6_s0] round   7/20 lr=0.0080 train_loss=0.2428 | val loss=1.3200 mIoU=0.3889 acc=0.7201 (22.1s)
+[pets_deeplabv3_mbv3_fedadmm_natural6_s0] round   8/20 lr=0.0073 train_loss=0.2408 | val loss=2.9005 mIoU=0.2784 acc=0.5678 (24.8s)
+[pets_deeplabv3_mbv3_fedadmm_natural6_s0] round   9/20 lr=0.0066 train_loss=0.3166 | val loss=2.2220 mIoU=0.2128 acc=0.4545 (21.0s)
+[pets_deeplabv3_mbv3_fedadmm_natural6_s0] round  10/20 lr=0.0058 train_loss=0.9396 | val loss=3.4157 mIoU=0.1081 acc=0.2530 (24.6s)
+[pets_deeplabv3_mbv3_fedadmm_natural6_s0] round  11/20 lr=0.0050 train_loss=1.1805 | val loss=20.7721 mIoU=0.0818 acc=0.2279 (19.2s)
+[pets_deeplabv3_mbv3_fedadmm_natural6_s0] round  12/20 lr=0.0043 train_loss=4.4750 | val loss=nan mIoU=0.1888 acc=0.4418 (24.2s)
+[pets_deeplabv3_mbv3_fedadmm_natural6_s0] round  13/20 lr=0.0035 train_loss=4.1592 | val loss=nan mIoU=0.2222 acc=0.6665 (18.7s)
+[pets_deeplabv3_mbv3_fedadmm_natural6_s0] round  14/20 lr=0.0028 train_loss=3.3635 | val loss=nan mIoU=0.2222 acc=0.6665 (21.7s)
+[pets_deeplabv3_mbv3_fedadmm_natural6_s0] round  15/20 lr=0.0021 train_loss=12.3974 | val loss=nan mIoU=0.2222 acc=0.6665 (23.5s)
+[data] pets: train=3311 val=369 test=3669 size=(224, 224) classes=3
+[data] natural partition over 6 clients: sizes=[530, 539, 540, 536, 626, 540] JS=0.097
+        client 0: {'Abyssinian': 90, 'Bengal': 90, 'Birman': 90, 'Bombay': 86, 'British_Shorthair': 90, 'Egyptian_Mau': 84}
+        client 1: {'Maine_Coon': 90, 'Persian': 90, 'Ragdoll': 90, 'Russian_Blue': 90, 'Siamese': 89, 'Sphynx': 90}
+        client 2: {'american_bulldog': 90, 'american_pit_bull_terrier': 90, 'basset_hound': 90, 'beagle': 90, 'boxer': 90, 'chihuahua': 90}
+        client 3: {'english_cocker_spaniel': 86, 'english_setter': 90, 'german_shorthaired': 90, 'great_pyrenees': 90, 'havanese': 90, 'japanese_chin': 90}
+        client 4: {'keeshond': 90, 'leonberger': 90, 'miniature_pinscher': 90, 'newfoundland': 86, 'pomeranian': 90, 'pug': 90, 'saint_bernard': 90}
+        client 5: {'samoyed': 90, 'scottish_terrier': 90, 'shiba_inu': 90, 'staffordshire_bull_terrier': 90, 'wheaten_terrier': 90, 'yorkshire_terrier': 90}
+[model] deeplabv3_mbv3: 11.02M params, 42.1 MB shared per upload, local keys=0
+[resume] continuing from round 15
+[pets_deeplabv3_mbv3_fedadmm_natural6_s0] round  16/20 lr=0.0015 train_loss=76.9227 | val loss=nan mIoU=0.2222 acc=0.6665 (38.1s)
+[pets_deeplabv3_mbv3_fedadmm_natural6_s0] round  17/20 lr=0.0010 train_loss=55.0740 | val loss=nan mIoU=0.2222 acc=0.6665 (21.0s)
+[pets_deeplabv3_mbv3_fedadmm_natural6_s0] round  18/20 lr=0.0006 train_loss=68.5172 | val loss=nan mIoU=0.2222 acc=0.6665 (22.5s)

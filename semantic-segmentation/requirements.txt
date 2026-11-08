@@ -1,0 +1,9 @@
+# Colab already ships all of these; locally: pip install -r requirements.txt
+torch>=2.0
+torchvision>=0.15
+numpy
+pillow
+pandas
+matplotlib
+tabulate        # markdown tables in compare.py (optional)
+pytest          # tests (optional)

@@ -1,0 +1,31 @@
+[data] pets: train=3311 val=369 test=3669 size=(224, 224) classes=3
+[data] natural partition over 6 clients: sizes=[530, 539, 540, 536, 626, 540] JS=0.097
+        client 0: {'Abyssinian': 90, 'Bengal': 90, 'Birman': 90, 'Bombay': 86, 'British_Shorthair': 90, 'Egyptian_Mau': 84}
+        client 1: {'Maine_Coon': 90, 'Persian': 90, 'Ragdoll': 90, 'Russian_Blue': 90, 'Siamese': 89, 'Sphynx': 90}
+        client 2: {'american_bulldog': 90, 'american_pit_bull_terrier': 90, 'basset_hound': 90, 'beagle': 90, 'boxer': 90, 'chihuahua': 90}
+        client 3: {'english_cocker_spaniel': 86, 'english_setter': 90, 'german_shorthaired': 90, 'great_pyrenees': 90, 'havanese': 90, 'japanese_chin': 90}
+        client 4: {'keeshond': 90, 'leonberger': 90, 'miniature_pinscher': 90, 'newfoundland': 86, 'pomeranian': 90, 'pug': 90, 'saint_bernard': 90}
+        client 5: {'samoyed': 90, 'scottish_terrier': 90, 'shiba_inu': 90, 'staffordshire_bull_terrier': 90, 'wheaten_terrier': 90, 'yorkshire_terrier': 90}
+[model] deeplabv3_mbv3: 11.02M params, 42.1 MB shared per upload, local keys=0
+[resume] no checkpoint found, starting from scratch
+[pets_deeplabv3_mbv3_feddyn_natural6_s0] round   1/20 lr=0.0100 train_loss=0.3484 | val loss=0.6499 mIoU=0.4723 acc=0.8116 (20.6s)
+[pets_deeplabv3_mbv3_feddyn_natural6_s0] round   2/20 lr=0.0099 train_loss=0.2473 | val loss=1.9013 mIoU=0.3995 acc=0.7239 (18.9s)
+[pets_deeplabv3_mbv3_feddyn_natural6_s0] round   3/20 lr=0.0098 train_loss=0.2800 | val loss=2.9002 mIoU=0.4695 acc=0.8058 (21.2s)
+[pets_deeplabv3_mbv3_feddyn_natural6_s0] round   4/20 lr=0.0095 train_loss=0.1387 | val loss=2.3816 mIoU=0.4860 acc=0.8235 (20.3s)
+[pets_deeplabv3_mbv3_feddyn_natural6_s0] round   5/20 lr=0.0091 train_loss=0.8251 | val loss=2.2586 mIoU=0.4134 acc=0.7439 (23.6s)
+[pets_deeplabv3_mbv3_feddyn_natural6_s0] round   6/20 lr=0.0086 train_loss=0.7770 | val loss=0.4227 mIoU=0.4889 acc=0.8320 (26.0s)
+[pets_deeplabv3_mbv3_feddyn_natural6_s0] round   7/20 lr=0.0080 train_loss=0.1982 | val loss=0.6227 mIoU=0.4862 acc=0.8249 (24.8s)
+[pets_deeplabv3_mbv3_feddyn_natural6_s0] round   8/20 lr=0.0073 train_loss=0.1437 | val loss=0.7080 mIoU=0.4960 acc=0.8352 (26.7s)
+[pets_deeplabv3_mbv3_feddyn_natural6_s0] round   9/20 lr=0.0066 train_loss=0.1273 | val loss=0.7709 mIoU=0.4977 acc=0.8367 (27.4s)
+[pets_deeplabv3_mbv3_feddyn_natural6_s0] round  10/20 lr=0.0058 train_loss=0.5227 | val loss=0.4506 mIoU=0.4911 acc=0.8340 (18.4s)
+[pets_deeplabv3_mbv3_feddyn_natural6_s0] round  11/20 lr=0.0050 train_loss=0.1556 | val loss=0.5022 mIoU=0.4963 acc=0.8357 (19.6s)
+[pets_deeplabv3_mbv3_feddyn_natural6_s0] round  12/20 lr=0.0043 train_loss=0.7282 | val loss=0.4387 mIoU=0.4753 acc=0.8220 (19.4s)
+[pets_deeplabv3_mbv3_feddyn_natural6_s0] round  13/20 lr=0.0035 train_loss=0.4655 | val loss=0.4129 mIoU=0.4861 acc=0.8275 (20.3s)
+[pets_deeplabv3_mbv3_feddyn_natural6_s0] round  14/20 lr=0.0028 train_loss=0.3443 | val loss=0.4004 mIoU=0.4893 acc=0.8296 (18.5s)
+[pets_deeplabv3_mbv3_feddyn_natural6_s0] round  15/20 lr=0.0021 train_loss=0.3110 | val loss=0.4055 mIoU=0.4841 acc=0.8237 (18.6s)
+[pets_deeplabv3_mbv3_feddyn_natural6_s0] round  16/20 lr=0.0015 train_loss=0.5991 | val loss=0.4258 mIoU=0.4715 acc=0.8099 (22.0s)
+[pets_deeplabv3_mbv3_feddyn_natural6_s0] round  17/20 lr=0.0010 train_loss=0.4322 | val loss=0.4426 mIoU=0.4646 acc=0.8022 (22.2s)
+[pets_deeplabv3_mbv3_feddyn_natural6_s0] round  18/20 lr=0.0006 train_loss=0.2972 | val loss=0.4624 mIoU=0.4576 acc=0.7943 (24.2s)
+[pets_deeplabv3_mbv3_feddyn_natural6_s0] round  19/20 lr=0.0003 train_loss=0.4446 | val loss=0.4648 mIoU=0.4585 acc=0.7956 (24.4s)
+[pets_deeplabv3_mbv3_feddyn_natural6_s0] round  20/20 lr=0.0002 train_loss=0.4494 | val loss=0.4746 mIoU=0.4566 acc=0.7931 (22.8s)
+[pets_deeplabv3_mbv3_feddyn_natural6_s0] TEST (best round 9): mIoU=0.4998 pixel_acc=0.8354 mean_acc=0.6371

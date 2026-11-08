@@ -1,0 +1,190 @@
+{
+  "name": "pets_deeplabv3_mbv3_fedavg_natural6_silobn_s0",
+  "config": {
+    "name": "pets_deeplabv3_mbv3_fedavg_natural6_silobn_s0",
+    "out_dir": "/content/drive/MyDrive/fedseg_runs",
+    "seed": 0,
+    "device": "auto",
+    "amp": true,
+    "dataset": "pets",
+    "data_root": "/content/data",
+    "download": true,
+    "img_size": [
+      224,
+      224
+    ],
+    "augment": true,
+    "num_workers": 2,
+    "max_train_samples": 0,
+    "max_eval_samples": 0,
+    "num_clients": 6,
+    "partition": "natural",
+    "dirichlet_alpha": 0.3,
+    "clients_per_round": 3,
+    "rounds": 20,
+    "local_epochs": 1,
+    "hetero_epochs": false,
+    "max_local_steps": 0,
+    "algorithm": "fedavg",
+    "bn_mode": "silobn",
+    "mu": 0.01,
+    "rho": 0.01,
+    "alpha": 0.01,
+    "server_opt": "sgd",
+    "server_lr": 1.0,
+    "server_momentum": 0.9,
+    "weighted_agg": true,
+    "model": "deeplabv3_mbv3",
+    "pretrained": true,
+    "norm": "bn",
+    "unet_base": 32,
+    "batch_size": 16,
+    "optimizer": "sgd",
+    "lr": 0.01,
+    "momentum": 0.9,
+    "weight_decay": 0.0005,
+    "lr_schedule": "cosine",
+    "class_weights": "none",
+    "label_smoothing": 0.0,
+    "eval_every": 1,
+    "eval_personalized": true,
+    "save_checkpoints": true,
+    "resume": true,
+    "num_vis": 6,
+    "verbose": true
+  },
+  "best_round": 16,
+  "best_val_mIoU": 0.5104347822078533,
+  "test": {
+    "mIoU": 0.5105172405510601,
+    "pixel_acc": 0.8461259205152213,
+    "mean_acc": 0.6414943226188958,
+    "mDice": 0.5703783428241487,
+    "fwIoU": 0.7503670661589574,
+    "per_class_iou": {
+      "background": 0.9449692001417379,
+      "cat": 0.0,
+      "dog": 0.5865825215114423
+    },
+    "loss": 0.3369566079916503
+  },
+  "test_personalized": {
+    "mIoU": 0.50641209619328,
+    "pixel_acc": 0.8424442704389911,
+    "mean_acc": 0.6383251865242384,
+    "mDice": 0.5676926765110052,
+    "fwIoU": 0.7446850620049208,
+    "loss": 0.34737573184856135,
+    "per_class_iou": {
+      "background": 0.9381724469447373,
+      "cat": 2.1089554617510092e-06,
+      "dog": 0.5810617326796407
+    },
+    "per_client_mIoU": [
+      0.49908247726130756,
+      0.4995633390165286,
+      0.5088527084668281,
+      0.5102311706111021,
+      0.5101981000513,
+      0.510544781752613
+    ]
+  },
+  "partition": {
+    "client_sizes": [
+      530,
+      539,
+      540,
+      536,
+      626,
+      540
+    ],
+    "client_groups": [
+      {
+        "Abyssinian": 90,
+        "Bengal": 90,
+        "Birman": 90,
+        "Bombay": 86,
+        "British_Shorthair": 90,
+        "Egyptian_Mau": 84
+      },
+      {
+        "Maine_Coon": 90,
+        "Persian": 90,
+        "Ragdoll": 90,
+        "Russian_Blue": 90,
+        "Siamese": 89,
+        "Sphynx": 90
+      },
+      {
+        "american_bulldog": 90,
+        "american_pit_bull_terrier": 90,
+        "basset_hound": 90,
+        "beagle": 90,
+        "boxer": 90,
+        "chihuahua": 90
+      },
+      {
+        "english_cocker_spaniel": 86,
+        "english_setter": 90,
+        "german_shorthaired": 90,
+        "great_pyrenees": 90,
+        "havanese": 90,
+        "japanese_chin": 90
+      },
+      {
+        "keeshond": 90,
+        "leonberger": 90,
+        "miniature_pinscher": 90,
+        "newfoundland": 86,
+        "pomeranian": 90,
+        "pug": 90,
+        "saint_bernard": 90
+      },
+      {
+        "samoyed": 90,
+        "scottish_terrier": 90,
+        "shiba_inu": 90,
+        "staffordshire_bull_terrier": 90,
+        "wheaten_terrier": 90,
+        "yorkshire_terrier": 90
+      }
+    ],
+    "client_class_dist": [
+      [
+        0.6541,
+        0.3459,
+        0.0
+      ],
+      [
+        0.6111,
+        0.3889,
+        0.0
+      ],
+      [
+        0.6933,
+        0.0,
+        0.3067
+      ],
+      [
+        0.6844,
+        0.0,
+        0.3156
+      ],
+      [
+        0.6306,
+        0.0,
+        0.3694
+      ],
+      [
+        0.6991,
+        0.0,
+        0.3009
+      ]
+    ],
+    "mean_js": 0.09740399660050265,
+    "mean_tv": 0.1666395003408818
+  },
+  "comm_MB": 5044.945220947266,
+  "params_M": 11.020851,
+  "train_time_min": 14.821057279904684
+}

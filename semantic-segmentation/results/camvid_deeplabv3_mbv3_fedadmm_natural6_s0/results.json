@@ -1,0 +1,195 @@
+{
+  "name": "camvid_deeplabv3_mbv3_fedadmm_natural6_s0",
+  "config": {
+    "name": "camvid_deeplabv3_mbv3_fedadmm_natural6_s0",
+    "out_dir": "/content/drive/MyDrive/fedseg_runs",
+    "seed": 0,
+    "device": "auto",
+    "amp": true,
+    "dataset": "camvid",
+    "data_root": "/content/data",
+    "download": true,
+    "img_size": [
+      240,
+      320
+    ],
+    "augment": true,
+    "num_workers": 2,
+    "max_train_samples": 0,
+    "max_eval_samples": 0,
+    "num_clients": 6,
+    "partition": "natural",
+    "dirichlet_alpha": 0.5,
+    "clients_per_round": 3,
+    "rounds": 20,
+    "local_epochs": 3,
+    "hetero_epochs": true,
+    "max_local_steps": 0,
+    "algorithm": "fedadmm",
+    "bn_mode": "avg",
+    "mu": 0.01,
+    "rho": 0.01,
+    "alpha": 0.01,
+    "server_opt": "sgd",
+    "server_lr": 1.0,
+    "server_momentum": 0.9,
+    "weighted_agg": true,
+    "model": "deeplabv3_mbv3",
+    "pretrained": true,
+    "norm": "bn",
+    "unet_base": 32,
+    "batch_size": 8,
+    "optimizer": "sgd",
+    "lr": 0.01,
+    "momentum": 0.9,
+    "weight_decay": 0.0005,
+    "lr_schedule": "cosine",
+    "class_weights": "inv_sqrt",
+    "label_smoothing": 0.0,
+    "eval_every": 1,
+    "eval_personalized": false,
+    "save_checkpoints": true,
+    "resume": true,
+    "num_vis": 6,
+    "verbose": true
+  },
+  "best_round": 5,
+  "best_val_mIoU": 0.4096890277891921,
+  "test": {
+    "mIoU": 0.32911718337403795,
+    "pixel_acc": 0.7209220406065903,
+    "mean_acc": 0.44385246731323086,
+    "mDice": 0.428839922984117,
+    "fwIoU": 0.5906544487340489,
+    "per_class_iou": {
+      "Sky": 0.7353341353242192,
+      "Building": 0.5381385180104511,
+      "Pole": 0.051983044721190814,
+      "Road": 0.8024573514073997,
+      "Sidewalk": 0.47543620839005074,
+      "Tree": 0.3369558270075984,
+      "SignSymbol": 0.04349404612145976,
+      "Fence": 0.15166786866854617,
+      "Car": 0.45281122670528856,
+      "Pedestrian": 0.031016434402395158,
+      "Bicyclist": 0.0009943563558183284
+    },
+    "loss": 1.4229915658803456
+  },
+  "test_personalized": null,
+  "partition": {
+    "client_sizes": [
+      62,
+      51,
+      50,
+      68,
+      68,
+      68
+    ],
+    "client_groups": [
+      {
+        "0001TP": 62
+      },
+      {
+        "0006R0": 51
+      },
+      {
+        "0006R0": 50
+      },
+      {
+        "0016E5": 68
+      },
+      {
+        "0016E5": 68
+      },
+      {
+        "0016E5": 68
+      }
+    ],
+    "client_class_dist": [
+      [
+        0.201,
+        0.3021,
+        0.0097,
+        0.1991,
+        0.0469,
+        0.1182,
+        0.0122,
+        0.0045,
+        0.0936,
+        0.0071,
+        0.0056
+      ],
+      [
+        0.2076,
+        0.1275,
+        0.0117,
+        0.3672,
+        0.0281,
+        0.1685,
+        0.0151,
+        0.0108,
+        0.0602,
+        0.0031,
+        0.0004
+      ],
+      [
+        0.2122,
+        0.0952,
+        0.0103,
+        0.3703,
+        0.0206,
+        0.1971,
+        0.02,
+        0.0048,
+        0.0647,
+        0.0037,
+        0.0011
+      ],
+      [
+        0.1397,
+        0.302,
+        0.0095,
+        0.3475,
+        0.0582,
+        0.0584,
+        0.0103,
+        0.016,
+        0.0488,
+        0.007,
+        0.0026
+      ],
+      [
+        0.1491,
+        0.2978,
+        0.0096,
+        0.3557,
+        0.0575,
+        0.0462,
+        0.0089,
+        0.0125,
+        0.0504,
+        0.0078,
+        0.0045
+      ],
+      [
+        0.1634,
+        0.2686,
+        0.0106,
+        0.3426,
+        0.0575,
+        0.0628,
+        0.0096,
+        0.0188,
+        0.0532,
+        0.0096,
+        0.0033
+      ]
+    ],
+    "mean_js": 0.01896125407382328,
+    "mean_tv": 0.11922446816836263
+  },
+  "comm_MB": 5058.696441650391,
+  "params_M": 11.022907,
+  "train_time_min": 3.947425734996796
+}

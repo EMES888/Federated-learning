@@ -1,0 +1,112 @@
+{
+  "name": "camvid_deeplabv3_mbv3_centralized_s0",
+  "config": {
+    "name": "camvid_deeplabv3_mbv3_centralized_s0",
+    "out_dir": "/content/drive/MyDrive/fedseg_runs",
+    "seed": 0,
+    "device": "auto",
+    "amp": true,
+    "dataset": "camvid",
+    "data_root": "/content/data",
+    "download": true,
+    "img_size": [
+      240,
+      320
+    ],
+    "augment": true,
+    "num_workers": 2,
+    "max_train_samples": 0,
+    "max_eval_samples": 0,
+    "num_clients": 1,
+    "partition": "iid",
+    "dirichlet_alpha": 0.5,
+    "clients_per_round": 0,
+    "rounds": 20,
+    "local_epochs": 2,
+    "hetero_epochs": false,
+    "max_local_steps": 0,
+    "algorithm": "centralized",
+    "bn_mode": "avg",
+    "mu": 0.01,
+    "rho": 0.01,
+    "alpha": 0.01,
+    "server_opt": "sgd",
+    "server_lr": 1.0,
+    "server_momentum": 0.9,
+    "weighted_agg": true,
+    "model": "deeplabv3_mbv3",
+    "pretrained": true,
+    "norm": "bn",
+    "unet_base": 32,
+    "batch_size": 8,
+    "optimizer": "sgd",
+    "lr": 0.01,
+    "momentum": 0.9,
+    "weight_decay": 0.0005,
+    "lr_schedule": "cosine",
+    "class_weights": "inv_sqrt",
+    "label_smoothing": 0.0,
+    "eval_every": 1,
+    "eval_personalized": false,
+    "save_checkpoints": true,
+    "resume": true,
+    "num_vis": 6,
+    "verbose": true
+  },
+  "best_round": 16,
+  "best_val_mIoU": 0.5755541414197984,
+  "test": {
+    "mIoU": 0.4860647794920298,
+    "pixel_acc": 0.82746380027354,
+    "mean_acc": 0.6588085139871287,
+    "mDice": 0.602975481386754,
+    "fwIoU": 0.7306159711504039,
+    "per_class_iou": {
+      "Sky": 0.8317614214888616,
+      "Building": 0.6683162453965482,
+      "Pole": 0.08582075871057201,
+      "Road": 0.884276975161525,
+      "Sidewalk": 0.6506470224261822,
+      "Tree": 0.6491631594204184,
+      "SignSymbol": 0.18781184283342556,
+      "Fence": 0.16431031932204823,
+      "Car": 0.699779003237913,
+      "Pedestrian": 0.22911080156417316,
+      "Bicyclist": 0.29571502485066087
+    },
+    "loss": 0.6532713735052444
+  },
+  "test_personalized": null,
+  "partition": {
+    "client_sizes": [
+      367
+    ],
+    "client_groups": [
+      {
+        "0001TP": 62,
+        "0006R0": 101,
+        "0016E5": 204
+      }
+    ],
+    "client_class_dist": [
+      [
+        0.1754,
+        0.2423,
+        0.0102,
+        0.3295,
+        0.0467,
+        0.1012,
+        0.0122,
+        0.0117,
+        0.0611,
+        0.0067,
+        0.003
+      ]
+    ],
+    "mean_js": 0.0,
+    "mean_tv": 0.0
+  },
+  "comm_MB": 1686.2321472167969,
+  "params_M": 11.022907,
+  "train_time_min": 5.4883528033892315
+}

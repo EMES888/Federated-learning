@@ -1,0 +1,22 @@
+[data] camvid: train=367 val=101 test=233 size=(256, 320) classes=11
+[data] natural partition over 3 clients: sizes=[62, 101, 204] JS=0.020
+        client 0: {'0001TP': 62}
+        client 1: {'0006R0': 101}
+        client 2: {'0016E5': 204}
+[model] segnet: 1.42M params, 5.4 MB shared per upload, local keys=0
+[resume] no checkpoint found, starting from scratch
+[camvid_segnet_fedprox_natural3_s0] round   1/14 lr=0.0100 train_loss=1.7345 | val loss=2.2884 mIoU=0.1152 acc=0.3874 (41.2s)
+[camvid_segnet_fedprox_natural3_s0] round   2/14 lr=0.0099 train_loss=1.5369 | val loss=2.6049 mIoU=0.1366 acc=0.4513 (42.0s)
+[camvid_segnet_fedprox_natural3_s0] round   3/14 lr=0.0095 train_loss=1.3444 | val loss=1.4370 mIoU=0.2710 acc=0.5390 (41.8s)
+[camvid_segnet_fedprox_natural3_s0] round   4/14 lr=0.0089 train_loss=1.1816 | val loss=1.5360 mIoU=0.2944 acc=0.5819 (42.1s)
+[camvid_segnet_fedprox_natural3_s0] round   5/14 lr=0.0081 train_loss=1.0646 | val loss=1.2589 mIoU=0.3707 acc=0.6771 (41.9s)
+[camvid_segnet_fedprox_natural3_s0] round   6/14 lr=0.0072 train_loss=0.9666 | val loss=0.8882 mIoU=0.4640 acc=0.7519 (42.0s)
+[camvid_segnet_fedprox_natural3_s0] round   7/14 lr=0.0062 train_loss=0.8915 | val loss=1.1525 mIoU=0.4144 acc=0.7365 (42.1s)
+[camvid_segnet_fedprox_natural3_s0] round   8/14 lr=0.0050 train_loss=0.8352 | val loss=0.9331 mIoU=0.4412 acc=0.7416 (41.2s)
+[camvid_segnet_fedprox_natural3_s0] round   9/14 lr=0.0039 train_loss=0.7880 | val loss=0.7257 mIoU=0.4817 acc=0.7749 (41.3s)
+[camvid_segnet_fedprox_natural3_s0] round  10/14 lr=0.0029 train_loss=0.7550 | val loss=0.7207 mIoU=0.4905 acc=0.7877 (42.2s)
+[camvid_segnet_fedprox_natural3_s0] round  11/14 lr=0.0020 train_loss=0.7068 | val loss=0.6387 mIoU=0.5120 acc=0.8038 (41.7s)
+[camvid_segnet_fedprox_natural3_s0] round  12/14 lr=0.0012 train_loss=0.6887 | val loss=0.6886 mIoU=0.5101 acc=0.8143 (41.9s)
+[camvid_segnet_fedprox_natural3_s0] round  13/14 lr=0.0006 train_loss=0.6749 | val loss=0.6204 mIoU=0.5206 acc=0.8171 (42.0s)
+[camvid_segnet_fedprox_natural3_s0] round  14/14 lr=0.0002 train_loss=0.6861 | val loss=0.6211 mIoU=0.5191 acc=0.8133 (42.1s)
+[camvid_segnet_fedprox_natural3_s0] TEST (best round 13): mIoU=0.3458 pixel_acc=0.6668 mean_acc=0.5635

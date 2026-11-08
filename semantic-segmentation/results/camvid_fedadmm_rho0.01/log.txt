@@ -1,0 +1,28 @@
+[data] camvid: train=367 val=101 test=233 size=(240, 320) classes=11
+[data] natural partition over 3 clients: sizes=[62, 101, 204] JS=0.020
+        client 0: {'0001TP': 62}
+        client 1: {'0006R0': 101}
+        client 2: {'0016E5': 204}
+[model] deeplabv3_mbv3: 11.02M params, 42.2 MB shared per upload, local keys=0
+[resume] no checkpoint found, starting from scratch
+[camvid_fedadmm_rho0.01] round   1/20 lr=0.0100 train_loss=1.3783 | val loss=2.2323 mIoU=0.3024 acc=0.7666 (20.6s)
+[camvid_fedadmm_rho0.01] round   2/20 lr=0.0099 train_loss=0.8948 | val loss=1.1712 mIoU=0.3854 acc=0.7622 (15.9s)
+[camvid_fedadmm_rho0.01] round   3/20 lr=0.0098 train_loss=0.7758 | val loss=0.9238 mIoU=0.4610 acc=0.8279 (14.6s)
+[camvid_fedadmm_rho0.01] round   4/20 lr=0.0095 train_loss=0.7196 | val loss=0.7321 mIoU=0.4745 acc=0.8125 (14.7s)
+[camvid_fedadmm_rho0.01] round   5/20 lr=0.0091 train_loss=0.6636 | val loss=0.7347 mIoU=0.4665 acc=0.8011 (14.1s)
+[camvid_fedadmm_rho0.01] round   6/20 lr=0.0086 train_loss=0.6304 | val loss=0.7693 mIoU=0.4523 acc=0.7648 (14.4s)
+[camvid_fedadmm_rho0.01] round   7/20 lr=0.0080 train_loss=0.6025 | val loss=1.4431 mIoU=0.3471 acc=0.6115 (14.7s)
+[camvid_fedadmm_rho0.01] round   8/20 lr=0.0073 train_loss=0.5689 | val loss=2.2125 mIoU=0.2778 acc=0.4841 (15.2s)
+[camvid_fedadmm_rho0.01] round   9/20 lr=0.0066 train_loss=0.5469 | val loss=2.9536 mIoU=0.2080 acc=0.3771 (14.6s)
+[camvid_fedadmm_rho0.01] round  10/20 lr=0.0058 train_loss=0.5280 | val loss=2.9884 mIoU=0.1882 acc=0.3697 (14.6s)
+[camvid_fedadmm_rho0.01] round  11/20 lr=0.0050 train_loss=0.5153 | val loss=3.5778 mIoU=0.1441 acc=0.2784 (14.8s)
+[camvid_fedadmm_rho0.01] round  12/20 lr=0.0043 train_loss=0.5044 | val loss=3.4154 mIoU=0.1436 acc=0.3072 (14.6s)
+[camvid_fedadmm_rho0.01] round  13/20 lr=0.0035 train_loss=0.4923 | val loss=3.3792 mIoU=0.1435 acc=0.3197 (14.4s)
+[camvid_fedadmm_rho0.01] round  14/20 lr=0.0028 train_loss=0.4854 | val loss=3.0268 mIoU=0.1413 acc=0.3604 (14.7s)
+[camvid_fedadmm_rho0.01] round  15/20 lr=0.0021 train_loss=0.4828 | val loss=3.0537 mIoU=0.1160 acc=0.3422 (14.3s)
+[camvid_fedadmm_rho0.01] round  16/20 lr=0.0015 train_loss=0.4753 | val loss=2.9206 mIoU=0.1073 acc=0.3500 (14.6s)
+[camvid_fedadmm_rho0.01] round  17/20 lr=0.0010 train_loss=0.4736 | val loss=3.0927 mIoU=0.0999 acc=0.3552 (16.7s)
+[camvid_fedadmm_rho0.01] round  18/20 lr=0.0006 train_loss=0.4723 | val loss=2.8843 mIoU=0.1051 acc=0.3738 (14.5s)
+[camvid_fedadmm_rho0.01] round  19/20 lr=0.0003 train_loss=0.4831 | val loss=2.9732 mIoU=0.1116 acc=0.4071 (14.8s)
+[camvid_fedadmm_rho0.01] round  20/20 lr=0.0002 train_loss=0.4860 | val loss=3.1912 mIoU=0.1101 acc=0.4170 (14.3s)
+[camvid_fedadmm_rho0.01] TEST (best round 4): mIoU=0.3425 pixel_acc=0.7156 mean_acc=0.4740

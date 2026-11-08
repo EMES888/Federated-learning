@@ -1,0 +1,144 @@
+{
+  "name": "camvid_fedprox_mu0.1",
+  "config": {
+    "name": "camvid_fedprox_mu0.1",
+    "out_dir": "/content/drive/MyDrive/fedseg_runs",
+    "seed": 0,
+    "device": "auto",
+    "amp": true,
+    "dataset": "camvid",
+    "data_root": "/content/data",
+    "download": true,
+    "img_size": [
+      240,
+      320
+    ],
+    "augment": true,
+    "num_workers": 2,
+    "max_train_samples": 0,
+    "max_eval_samples": 0,
+    "num_clients": 3,
+    "partition": "natural",
+    "dirichlet_alpha": 0.5,
+    "clients_per_round": 0,
+    "rounds": 20,
+    "local_epochs": 2,
+    "hetero_epochs": false,
+    "max_local_steps": 0,
+    "algorithm": "fedprox",
+    "bn_mode": "avg",
+    "mu": 0.1,
+    "rho": 0.01,
+    "alpha": 0.01,
+    "server_opt": "sgd",
+    "server_lr": 1.0,
+    "server_momentum": 0.9,
+    "weighted_agg": true,
+    "model": "deeplabv3_mbv3",
+    "pretrained": true,
+    "norm": "bn",
+    "unet_base": 32,
+    "batch_size": 8,
+    "optimizer": "sgd",
+    "lr": 0.01,
+    "momentum": 0.9,
+    "weight_decay": 0.0005,
+    "lr_schedule": "cosine",
+    "class_weights": "inv_sqrt",
+    "label_smoothing": 0.0,
+    "eval_every": 1,
+    "eval_personalized": false,
+    "save_checkpoints": true,
+    "resume": true,
+    "num_vis": 6,
+    "verbose": true
+  },
+  "best_round": 10,
+  "best_val_mIoU": 0.5234089242120085,
+  "test": {
+    "mIoU": 0.4008061651124856,
+    "pixel_acc": 0.771719995674401,
+    "mean_acc": 0.559305177400888,
+    "mDice": 0.5090485833438644,
+    "fwIoU": 0.6614886914095562,
+    "per_class_iou": {
+      "Sky": 0.7758662186172974,
+      "Building": 0.597992306508227,
+      "Pole": 0.06687832824060905,
+      "Road": 0.8265101681747887,
+      "Sidewalk": 0.5770953196620212,
+      "Tree": 0.5522904411609899,
+      "SignSymbol": 0.13921245157014148,
+      "Fence": 0.14180187260540017,
+      "Car": 0.5774513368189113,
+      "Pedestrian": 0.12357880987161948,
+      "Bicyclist": 0.030190563007336024
+    },
+    "loss": 0.8179768083433225
+  },
+  "test_personalized": null,
+  "partition": {
+    "client_sizes": [
+      62,
+      101,
+      204
+    ],
+    "client_groups": [
+      {
+        "0001TP": 62
+      },
+      {
+        "0006R0": 101
+      },
+      {
+        "0016E5": 204
+      }
+    ],
+    "client_class_dist": [
+      [
+        0.201,
+        0.3021,
+        0.0097,
+        0.1991,
+        0.0469,
+        0.1182,
+        0.0122,
+        0.0045,
+        0.0936,
+        0.0071,
+        0.0056
+      ],
+      [
+        0.2099,
+        0.1115,
+        0.011,
+        0.3687,
+        0.0244,
+        0.1826,
+        0.0175,
+        0.0079,
+        0.0624,
+        0.0034,
+        0.0007
+      ],
+      [
+        0.1508,
+        0.2894,
+        0.0099,
+        0.3486,
+        0.0577,
+        0.0559,
+        0.0096,
+        0.0158,
+        0.0508,
+        0.0081,
+        0.0034
+      ]
+    ],
+    "mean_js": 0.0199955303581466,
+    "mean_tv": 0.12795400369865503
+  },
+  "comm_MB": 5058.696441650391,
+  "params_M": 11.022907,
+  "train_time_min": 5.139888135592143
+}

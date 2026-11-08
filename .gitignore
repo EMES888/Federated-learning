@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.pytest_cache/
+.DS_Store
+*.zip
+
+# model checkpoints, datasets and local run outputs
+*.pt
+*.pth
+/semantic-segmentation/data/
+/semantic-segmentation/runs/

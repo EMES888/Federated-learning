@@ -1,0 +1,55 @@
+{
+  "client_sizes": [
+    3311
+  ],
+  "client_groups": [
+    {
+      "Abyssinian": 90,
+      "american_bulldog": 90,
+      "american_pit_bull_terrier": 90,
+      "basset_hound": 90,
+      "beagle": 90,
+      "Bengal": 90,
+      "Birman": 90,
+      "Bombay": 86,
+      "boxer": 90,
+      "British_Shorthair": 90,
+      "chihuahua": 90,
+      "Egyptian_Mau": 84,
+      "english_cocker_spaniel": 86,
+      "english_setter": 90,
+      "german_shorthaired": 90,
+      "great_pyrenees": 90,
+      "havanese": 90,
+      "japanese_chin": 90,
+      "keeshond": 90,
+      "leonberger": 90,
+      "Maine_Coon": 90,
+      "miniature_pinscher": 90,
+      "newfoundland": 86,
+      "Persian": 90,
+      "pomeranian": 90,
+      "pug": 90,
+      "Ragdoll": 90,
+      "Russian_Blue": 90,
+      "saint_bernard": 90,
+      "samoyed": 90,
+      "scottish_terrier": 90,
+      "shiba_inu": 90,
+      "Siamese": 89,
+      "Sphynx": 90,
+      "staffordshire_bull_terrier": 90,
+      "wheaten_terrier": 90,
+      "yorkshire_terrier": 90
+    }
+  ],
+  "client_class_dist": [
+    [
+      0.6615,
+      0.1171,
+      0.2214
+    ]
+  ],
+  "mean_js": 0.0,
+  "mean_tv": 0.0
+}

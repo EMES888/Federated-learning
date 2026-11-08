@@ -1,0 +1,31 @@
+[data] pets: train=3311 val=369 test=3669 size=(224, 224) classes=3
+[data] natural partition over 6 clients: sizes=[530, 539, 540, 536, 626, 540] JS=0.097
+        client 0: {'Abyssinian': 90, 'Bengal': 90, 'Birman': 90, 'Bombay': 86, 'British_Shorthair': 90, 'Egyptian_Mau': 84}
+        client 1: {'Maine_Coon': 90, 'Persian': 90, 'Ragdoll': 90, 'Russian_Blue': 90, 'Siamese': 89, 'Sphynx': 90}
+        client 2: {'american_bulldog': 90, 'american_pit_bull_terrier': 90, 'basset_hound': 90, 'beagle': 90, 'boxer': 90, 'chihuahua': 90}
+        client 3: {'english_cocker_spaniel': 86, 'english_setter': 90, 'german_shorthaired': 90, 'great_pyrenees': 90, 'havanese': 90, 'japanese_chin': 90}
+        client 4: {'keeshond': 90, 'leonberger': 90, 'miniature_pinscher': 90, 'newfoundland': 86, 'pomeranian': 90, 'pug': 90, 'saint_bernard': 90}
+        client 5: {'samoyed': 90, 'scottish_terrier': 90, 'shiba_inu': 90, 'staffordshire_bull_terrier': 90, 'wheaten_terrier': 90, 'yorkshire_terrier': 90}
+[model] deeplabv3_mbv3: 11.02M params, 42.1 MB shared per upload, local keys=0
+[resume] no checkpoint found, starting from scratch
+[pets_deeplabv3_mbv3_fedavg_natural6_srvmomentum_s0] round   1/20 lr=0.0100 train_loss=0.3482 | val loss=0.4609 mIoU=0.4780 acc=0.8211 (20.3s)
+[pets_deeplabv3_mbv3_fedavg_natural6_srvmomentum_s0] round   2/20 lr=0.0099 train_loss=0.2351 | val loss=0.4995 mIoU=0.4569 acc=0.7479 (18.6s)
+[pets_deeplabv3_mbv3_fedavg_natural6_srvmomentum_s0] round   3/20 lr=0.0098 train_loss=0.2218 | val loss=0.5588 mIoU=0.4182 acc=0.7422 (17.6s)
+[pets_deeplabv3_mbv3_fedavg_natural6_srvmomentum_s0] round   4/20 lr=0.0095 train_loss=0.1705 | val loss=2.7756 mIoU=0.4697 acc=0.8057 (23.2s)
+[pets_deeplabv3_mbv3_fedavg_natural6_srvmomentum_s0] round   5/20 lr=0.0091 train_loss=0.4780 | val loss=2.6697 mIoU=0.4156 acc=0.7455 (19.4s)
+[pets_deeplabv3_mbv3_fedavg_natural6_srvmomentum_s0] round   6/20 lr=0.0086 train_loss=0.3313 | val loss=0.6904 mIoU=0.4212 acc=0.7576 (21.2s)
+[pets_deeplabv3_mbv3_fedavg_natural6_srvmomentum_s0] round   7/20 lr=0.0080 train_loss=0.2207 | val loss=1.4546 mIoU=0.5007 acc=0.8416 (22.0s)
+[pets_deeplabv3_mbv3_fedavg_natural6_srvmomentum_s0] round   8/20 lr=0.0073 train_loss=0.1323 | val loss=2.2025 mIoU=0.4981 acc=0.8382 (18.3s)
+[pets_deeplabv3_mbv3_fedavg_natural6_srvmomentum_s0] round   9/20 lr=0.0066 train_loss=0.1334 | val loss=2.9989 mIoU=0.4995 acc=0.8390 (17.7s)
+[pets_deeplabv3_mbv3_fedavg_natural6_srvmomentum_s0] round  10/20 lr=0.0058 train_loss=1.5101 | val loss=0.8149 mIoU=0.4582 acc=0.8110 (23.2s)
+[pets_deeplabv3_mbv3_fedavg_natural6_srvmomentum_s0] round  11/20 lr=0.0050 train_loss=0.1446 | val loss=0.7257 mIoU=0.4130 acc=0.7783 (18.7s)
+[pets_deeplabv3_mbv3_fedavg_natural6_srvmomentum_s0] round  12/20 lr=0.0043 train_loss=1.4838 | val loss=0.6124 mIoU=0.2232 acc=0.6670 (20.7s)
+[pets_deeplabv3_mbv3_fedavg_natural6_srvmomentum_s0] round  13/20 lr=0.0035 train_loss=0.5658 | val loss=0.6489 mIoU=0.3714 acc=0.7005 (18.2s)
+[pets_deeplabv3_mbv3_fedavg_natural6_srvmomentum_s0] round  14/20 lr=0.0028 train_loss=0.6948 | val loss=0.5949 mIoU=0.3682 acc=0.6890 (17.0s)
+[pets_deeplabv3_mbv3_fedavg_natural6_srvmomentum_s0] round  15/20 lr=0.0021 train_loss=0.6545 | val loss=0.4922 mIoU=0.4834 acc=0.7827 (21.3s)
+[pets_deeplabv3_mbv3_fedavg_natural6_srvmomentum_s0] round  16/20 lr=0.0015 train_loss=0.6043 | val loss=0.5205 mIoU=0.4441 acc=0.7675 (22.0s)
+[pets_deeplabv3_mbv3_fedavg_natural6_srvmomentum_s0] round  17/20 lr=0.0010 train_loss=0.4958 | val loss=0.7232 mIoU=0.3949 acc=0.7115 (19.8s)
+[pets_deeplabv3_mbv3_fedavg_natural6_srvmomentum_s0] round  18/20 lr=0.0006 train_loss=0.3555 | val loss=1.0111 mIoU=0.3668 acc=0.6626 (22.3s)
+[pets_deeplabv3_mbv3_fedavg_natural6_srvmomentum_s0] round  19/20 lr=0.0003 train_loss=0.5960 | val loss=1.2658 mIoU=0.3714 acc=0.6597 (17.5s)
+[pets_deeplabv3_mbv3_fedavg_natural6_srvmomentum_s0] round  20/20 lr=0.0002 train_loss=0.6901 | val loss=1.3143 mIoU=0.3901 acc=0.6860 (20.5s)
+[pets_deeplabv3_mbv3_fedavg_natural6_srvmomentum_s0] TEST (best round 7): mIoU=0.5031 pixel_acc=0.8401 mean_acc=0.6345
